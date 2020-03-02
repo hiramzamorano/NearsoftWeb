@@ -97,6 +97,22 @@ nav {
         padding-left: 5rem;
     }
 
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+
+    .row-footer {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+
+    .container-subfooter {
+        flex-direction: column !important;
+    }
+
 
 }
 
@@ -219,7 +235,6 @@ nav {
 /* section */
 
 section {
-    padding: 4rem 0;
     display: flex;
 }
 
@@ -269,6 +284,7 @@ blockquote:before {
     display: block;
     padding-right: 5rem;
     border-radius: 6px;
+    padding-top: 5rem;
 }
 
 .testimonial .source {
@@ -294,14 +310,18 @@ blockquote:before {
 
 
 /* clients */
-.clients {
+.section-info {
     padding-left: 5rem;
     padding-right: 5rem;
+    width: 100%;
+}
+
+.lines {
+    border-bottom: 2px solid #e5e8e9;
+    border-top: 2px solid #e5e8e9;
 }
 
 .row {
-    border-bottom: 2px solid #e5e8e9;
-    border-top: 2px solid #e5e8e9;
     text-align: center;
     justify-content: center;
     padding-top: 3rem;
@@ -335,4 +355,128 @@ blockquote:before {
 
 .shadow {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 8px 36px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.row-list {
+    padding-top: 3rem;
+}
+
+.section-info a {
+    color: #ff5400;
+    text-decoration: none;
+    background-image: linear-gradient(180deg, transparent 90%, #ff5400 0), linear-gradient(180deg, transparent 90%, #fdc 0);
+    background-size: 0 100%, 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size .2s ease;
+}
+
+.section-info a:hover {
+    background-size: 100% 100%, 100% 100%;
+}
+
+/* footer */
+footer {
+    margin-top: 0;
+    padding: 2rem 0;
+}
+
+.container-footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex: 0 0 33.33%;
+    max-width: 33%;
+}
+
+.row-footer {
+    display: flex;
+    color: white;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-bottom: 2rem;
+}
+
+footer h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    color: #fff !important;
+    padding-right: 5rem;
+}
+
+footer a {
+    text-decoration: none;
+    margin-bottom: .2rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    background: none;
+    font-weight: 300;
+    transition: .3s;
+    font-size: .9rem;
+}
+
+.bg-black {
+    color #fff;
+    background-color: #313638;
+}
+
+.footer-logo {
+    width: 70%;
+    padding-bottom: 1rem;
+}
+
+.container-text {
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    flex-wrap: wrap;
+}
+
+.subfooter {
+    background: rgba(49, 54, 56, 0.9);
+    font-size: .9rem;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.container-subfooter {
+    display: flex;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+.subfooter-img {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-bottom: 2rem;
+}
+
+.benchmark {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.subfooter-text {
+    display: flex;
+}
+
+.subfooter-text div {
+    padding-right: 5rem;
+    align-items: baseline;
+}
+
+.subfooter a {
+    text-decoration: none;
+    margin-bottom: .2rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    background: none;
+    font-weight: 300;
+    transition: .3s;
+    font-size: .9rem;
 }
