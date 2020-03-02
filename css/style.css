@@ -25,11 +25,14 @@ p {
 }
 
 nav {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 5vh;
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 10;
 }
 
 .nav-logo {
@@ -244,14 +247,28 @@ section .main-text {
 blockquote {
     background: #FFEEE5;
     padding: 2rem 2rem 1rem;
-    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    position: sticky;
+    top: calc(45px + 4.25rem);
+}
+
+blockquote:before {
+    content: "“";
+    position: absolute;
+    top: 0;
+    left: .5rem;
+    color: #fff;
+    z-index: -1;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 10rem;
 }
 
 .testimonial {
     display: block;
     padding-right: 5rem;
-    position: sticky;
-    top: calc(45px + 4.25rem);
+    border-radius: 6px;
 }
 
 .testimonial .source {
