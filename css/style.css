@@ -16,6 +16,14 @@ p {
     margin-inline-end: 0px;
 }
 
+.h2 {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -69,6 +77,24 @@ nav {
     .main-img {
         display: none;
     }
+
+    .img-div {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+
+    section {
+        flex-direction: column !important;
+    }
+
+    .testimonial {
+        padding-left: 5rem;
+    }
+
+
 }
 
 @media screen and (max-width:768px) {
@@ -138,6 +164,7 @@ nav {
 
 /* Main TEXT */
 
+
 .main-text {
     background: #fdc;
     padding: 6rem 0;
@@ -190,16 +217,18 @@ nav {
 
 section {
     padding: 4rem 0;
-    display: block;
+    display: flex;
 }
 
 section .main-text {
     background: white;
+    display: block;
 }
 
 .block-icon {
     padding-left: 5rem;
     position: relative;
+    padding-bottom: 2rem;
 }
 
 .block-icon .icon {
@@ -210,4 +239,83 @@ section .main-text {
     left: 0;
     top: -1.06rem;
     background-color: #fdc;
+}
+
+blockquote {
+    background: #FFEEE5;
+    padding: 2rem 2rem 1rem;
+    position: relative;
+}
+
+.testimonial {
+    display: block;
+    padding-right: 5rem;
+    position: sticky;
+    top: calc(45px + 4.25rem);
+}
+
+.testimonial .source {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.testimonial .person {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.testimonial .source p {
+    margin: 0;
+    line-height: 2.5rem;
+    font-size: 18px;
+}
+
+
+/* clients */
+.clients {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.row {
+    border-bottom: 2px solid #e5e8e9;
+    border-top: 2px solid #e5e8e9;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.row-text {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.row-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.img-div {
+    flex: 0 0 16.6666%;
+    max-width: 16.6666%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.img-div:hover {
+    transform: scale(1.1);
+}
+
+.shadow {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 8px 36px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
