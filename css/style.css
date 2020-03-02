@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+body {
+    color: #313638;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 5vh;
     background-color: whitesmoke;
 }
 
@@ -21,7 +33,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 60%;
 }
 
 .nav-links li {
@@ -34,6 +46,10 @@ nav {
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: orangered;
 }
 
 .nav-menu {
@@ -49,9 +65,9 @@ nav {
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1024px) {
-    .nav-links {
-        width: 60%;
+@media screen and (max-width: 980px) {
+    .main-img {
+        display: none;
     }
 }
 
@@ -63,12 +79,13 @@ nav {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 100%;
-        top: 8vh;
+        height: 50%;
+        top: 5vh;
         background-color: whitesmoke;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        padding-left: 5rem;
+        /* align-items: center; */
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
@@ -78,10 +95,17 @@ nav {
         opacity: 0;
     }
 
+    .nav-links a:hover {
+        color: orangered;
+    }
+
     .nav-menu {
         display: block;
     }
+
 }
+
+
 
 .nav-active {
     transform: translateX(0%);
@@ -109,4 +133,81 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-4px, -6px);
+}
+
+
+/* Main TEXT */
+
+.main-text {
+    background: #fdc;
+    padding: 6rem 0;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.main-text h1 {
+    font-size: 3.5rem;
+}
+
+.main-text p {
+    font-size: 1.2rem;
+}
+
+.orange {
+    color: orangered;
+}
+
+.info-text {
+    padding-right: 15px;
+}
+
+.button {
+    background: orangered;
+    color: white;
+    display: inline-block;
+    padding: .5em 1.5em;
+    font-weight: bold;
+    border: 2px solid orangered;
+    text-decoration: none;
+    border-radius: 2.5em;
+    margin-top: .5rem;
+}
+
+.button:hover {
+    background-color: #e64c00;
+    border-color: #e64c00;
+}
+
+.img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* section */
+
+section {
+    padding: 4rem 0;
+    display: block;
+}
+
+section .main-text {
+    background: white;
+}
+
+.block-icon {
+    padding-left: 5rem;
+    position: relative;
+}
+
+.block-icon .icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -1.06rem;
+    background-color: #fdc;
 }
